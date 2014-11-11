@@ -1,6 +1,6 @@
 /*
  * grunt-cordova-config
- * 
+ *
  *
  * Copyright (c) 2014 Andrey Shustariov
  * Licensed under the MIT license.
@@ -100,6 +100,22 @@ module.exports = function (grunt) {
                   return p;
                })
             };
+         }),
+         platform : options.platforms.map(function(platform) {
+             return {
+                 '@': {
+                     name : platform.name
+                 },
+                 icon : platform.icons.map(function(icon) {
+                     return {
+                         '@' : {
+                             src : icon.src,
+                             width : icon.width,
+                             height : icon.height
+                         }
+                     };
+                 })
+             };
          })
       };
 
