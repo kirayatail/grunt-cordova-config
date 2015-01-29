@@ -1,10 +1,11 @@
 {
   "name": "grunt-cordova-config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Generates cordova config.xml file",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/shustariov-andrey/grunt-cordova-config.git"
+    "url": "https://github.com/kirayatail/grunt-cordova-config.git"
   },
   "author": {
     "name": "Andrey Shustariov",
